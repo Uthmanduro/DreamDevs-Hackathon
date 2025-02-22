@@ -22,8 +22,6 @@ import os
 from datetime import datetime
 from collections import defaultdict
 
-directory = '/home/uthman/coding/DreamDevs-Hackathon/mp-hackathon-sample-data/test-case-2'
-
 def process_transaction(directory):
     # initialize the default values for the analysis
     daily_sales_volume = defaultdict(int)
