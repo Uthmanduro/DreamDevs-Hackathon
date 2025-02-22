@@ -80,8 +80,7 @@ def process_transaction(directory):
     print(f'Highest sales staff ID for each month: {highest_sales_staff}')
     print(f'Highest hour of the day by average transaction volume: {highest_hourly_transaction_volume}')
 
-process_transaction(directory)
-
+# process_transaction(directory)
 
 
 
