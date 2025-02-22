@@ -2,6 +2,7 @@ import os
 from datetime import datetime
 from collections import defaultdict
 
+directory = '/home/uthman/coding/DreamDevs-Hackathon/mp-hackathon-sample-data/test-case-3'
 
 def process_transaction(directory):
     # initialize the default values for the analysis
@@ -74,8 +75,8 @@ def process_transaction(directory):
     highest_sales_staff = {month: max(sales, key=sales.get) for month, sales in monthly_staff_sales.items()}
     highest_hourly_transaction_volume = max(average_hourly_transaction_volume, key=average_hourly_transaction_volume.get)
     
-    print(f'Highest sales volume in a day: {highest_sales_volume}')
-    print(f'Highest sales value in a day: {highest_sales_value}')
+    print(f'Highest sales volume in a day: {highest_sales_volume} with transaction volume of {daily_sales_volume[highest_sales_volume]}')
+    print(f'Highest sales value in a day: {highest_sales_value} with sales value of {daily_sales_value[highest_sales_value]}')
     print(f'Most sold product ID by volume: {most_sold_product}')
     print(f'Highest sales staff ID for each month: {highest_sales_staff}')
     print(f'Highest hour of the day by average transaction volume: {highest_hourly_transaction_volume}')
