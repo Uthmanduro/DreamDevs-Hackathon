@@ -2,7 +2,6 @@ import os
 from datetime import datetime
 from collections import defaultdict
 
-directory = '/home/uthman/coding/DreamDevs-Hackathon/mp-hackathon-sample-data/test-case-3'
 
 def process_transaction(directory):
     # initialize the default values for the analysis
@@ -82,6 +81,7 @@ def process_transaction(directory):
     print(f'Highest hour of the day by average transaction volume: {highest_hourly_transaction_volume}')
 
 process_transaction(directory)
+
 
 
 
